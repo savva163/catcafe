@@ -11,3 +11,22 @@ c1 = Dice()
 c2 = Dice()
 c3 = Dice()
 print(c1, c1.roll())
+
+
+
+# class house
+from scr.house import House
+class Player():
+    def init(self, name, House, PlayerInteraction, Dice):
+        self.name = name
+        self.house = House """"(class?)"""
+        self.type = PlayerInteraction"""(class?)"""
+        self.choose_dice = Dice """(class?)"""
+    def repr(self):
+        pass
+
+    def choose_dice(self):
+        pass
+
+    def choose_action(self):
+        pass
