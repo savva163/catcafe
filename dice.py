@@ -21,12 +21,12 @@ class Player():
         self.name = name
         self.house = House """"(class?)"""
         self.type = PlayerInteraction"""(class?)"""
-        self.choosen_dice = Dice """(class?)"""
+        self.chosen_dice = Dice """(class?)"""
     def __repr__(self):
         pass
 
-    def choosen_dice(self):
+    def chosen_dice(self):
         pass
 
-    def choosen_action(self):
+    def chosen_action(self):
         pass
