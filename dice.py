@@ -22,7 +22,7 @@ class Player():
         self.house = House """"(class?)"""
         self.type = PlayerInteraction"""(class?)"""
         self.choosen_dice = Dice """(class?)"""
-    def repr(self):
+    def __repr__(self):
         pass
 
     def choosen_dice(self):
