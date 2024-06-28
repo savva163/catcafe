@@ -14,7 +14,7 @@ print(c1, c1.roll())
 
 
 
-# class house
+# house
 from scr.house import House
 class Player():
     def init(self, name, House, PlayerInteraction, Dice):
