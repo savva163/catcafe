@@ -17,3 +17,4 @@ def test_load():
     c = Dice()
     c.save()
     assert c.load() == c.current_side
+
