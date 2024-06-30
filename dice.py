@@ -3,7 +3,7 @@ from random import choice
 
 SIDES = [1, 2, 3, 4, 5, 6]
 class Dice:
-    def init(self):
+    def __init__(self):
         self.current_side = choice(SIDES)
     def __repr__(self):
         return str(self.current_side)
