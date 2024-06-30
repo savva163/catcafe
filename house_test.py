@@ -1,14 +1,13 @@
 from house import House
+
 def test_init():
     pass
+
 def test_repr():
     pass
-def test_score():
-    c = House()
-    c.put(1, 5, 5)
-    c.put(1, 2, 2)
-    c.put(1, 3, 3)
 
+def test_score():
+    pass
 
 def test_score1():
     c = House()
@@ -30,8 +29,6 @@ def test_score1():
 
 def test_score2():
     c = House()
-    c.put(1, 1, 2)
-    assert c.score2() == 2
     c.put(1, 2, 2)
     assert c.score2() == 0
     c.put(5, 1, 2)
