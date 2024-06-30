@@ -9,3 +9,4 @@ def choose_dice(self):
     pass
 def choose_action(self):
     pass
+
