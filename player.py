@@ -1,6 +1,6 @@
 from scr.house import House
 class Player():
-def init(self, name, house, interaction, dice):
+def __init__(self, name, house, interaction, dice):
     self.name = name
     self.house = House
     self.interaction = interaction
