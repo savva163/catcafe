@@ -80,18 +80,29 @@ def test_score_bowl_4():
     c.put(3, 6, 6)
     print(c)
 
-def test_score_pillow5():
-    pass
+def test_score_5():
+    c = House()
+    c.put(4, 5, 5)
+    assert c.score_5() == 15
+    c.put(3, 6, 5)
+    assert c.score_5() == 21
+    c.put(1, 2, 5)
+    assert c.score_5() == 23
+    c.put(1, 3, 5)
+    assert c.score_5() == 26
+    c.put(1, 5, 5)
+    assert c.score_5() == 31
+    print(c)
 def test_score_6():
     c = House()
     c.put(5, 1, 6)
-    assert c.score_mouse6() == 22
+    assert c.score_mouse_6() == 22
     c.put(5, 2, 6)
-    assert c.score_mouse6() == 22
+    assert c.score_mouse_6() == 22
     c.put(2, 4, 6)
-    assert c.score_mouse6() == 26
+    assert c.score_mouse_6() == 26
     c.put(2, 5, 6)
-    assert c.score_mouse6() == 32
+    assert c.score_mouse_6() == 32
     print(c)
 
 def test_save():
