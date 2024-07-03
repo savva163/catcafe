@@ -42,7 +42,6 @@ def test_score():
     c.put(1, 1, 1)
     c.put(1, 2, 2)
     c.put(1, 5, 5)
-    #заполнить три башни + две заполнить не до конца, посчитать сколько очков даст и проверить.
 def test_score_home1():
     a = House()
     assert a.score_home1() == 0
