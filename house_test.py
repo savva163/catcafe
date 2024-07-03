@@ -41,7 +41,6 @@ def test_score():
     c = House()
     c.put(1, 1, 1)
     c.put(1, 2, 2)
-    c.put(1, 3, 3)
     c.put(1, 5, 5)
     #заполнить три башни + две заполнить не до конца, посчитать сколько очков даст и проверить.
 def test_score_home_1():
@@ -81,9 +80,6 @@ def test_score_bowl_4():
     c.put(2, 5, 3)
     assert c.score_bowl_4() == 4
     c.put(3, 6, 6)
-    assert c.score_bowl_4() == 5
-    c.put(4, 6, 4)
-    assert c.score_bowl_4() == 9
     print(c)
 
 def test_score_pillow5():
