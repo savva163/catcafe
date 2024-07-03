@@ -13,7 +13,7 @@ class Player:
             self.actor = Human()
         else:
             self.actor = AI()
-
+            
     def __repr__(self):
         return f'{self.name}: {self.tower_lst}'
 
