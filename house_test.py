@@ -1,4 +1,4 @@
-from house_new import (House)
+from house import (House)
 
 def test_position():
     c = House()
@@ -75,15 +75,15 @@ def test_score_butterfly_3():
 
 def test_score_bowl_4():
     c = House()
-    assert c.score_bowl4() == 1
+    assert c.score_bowl_4() == 1
     c.put(3, 4, 2 )
-    assert c.score_bowl4() == 2
+    assert c.score_bowl_4() == 2
     c.put(2, 5, 3)
-    assert c.score_bowl4() == 4
+    assert c.score_bowl_4() == 4
     c.put(3, 6, 6)
-    assert c.score_bowl4() == 5
+    assert c.score_bowl_4() == 5
     c.put(4, 6, 4)
-    assert c.score_bowl4() == 9
+    assert c.score_bowl_4() == 9
     print(c)
 
 def test_score_pillow5():
