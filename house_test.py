@@ -8,18 +8,18 @@ def test_position():
 
 def test_init():
     c = House()
-    assert c.house == [["NAN", "", "NAN", "", "NAN"],
-                      ["NAN", "NAN", "", "NAN", "NAN"],
-                      ["NAN", "", "NAN", "", "NAN"],
-                      ["", "NAN", "", "NAN", "NAN"],
-                      ["NAN", "", "NAN", "", "NAN"],
-                      ["NAN", "NAN", "", "NAN", "NAN"],
-                      ["NAN", "", "NAN", "", "NAN"],
-                      ["", "NAN", "NAN", "NAN", ""],
-                      ["NAN", "", "NAN", "", "NAN"],
-                      ["", "NAN", "", "NAN", ""],
-                      ["NAN", "", "NAN", "", "NAN"],
-                      ["", "NAN", "", "NAN", ""]]
+    assert c.house == [["NAN", "NAN", "", "NAN", "NAN"],
+                          ["NAN", "", "NAN", "", "NAN"],
+                          ["", "NAN", "", "NAN", "NAN"],
+                          ["NAN", "", "NAN", "", "NAN"],
+                          ["NAN", "NAN", "", "NAN", "NAN"],
+                          ["NAN", "", "NAN", "", "NAN"],
+                          ["", "NAN", "NAN", "NAN", ""],
+                          ["NAN", "", "NAN", "", "NAN"],
+                          ["", "NAN", "", "NAN", ""],
+                          ["NAN", "", "NAN", "", "NAN"],
+                          ["", "NAN", "", "NAN", ""],
+                          ["NAN", "", "NAN", "", "NAN"]]
 
 def test_repr():
     c = House()
@@ -80,16 +80,16 @@ def test_score_bowl_4():
     c.put(3, 6, 6)
     print(c)
 
-def test_score_5():
+def test_score_pillow_5():
     c = House()
     c.put(4, 5, 5)
-    assert c.score_5() == 15
+    assert c.score_pillow_5() == 15
     c.put(3, 6, 5)
-    assert c.score_5() == 21
+    assert c.score_pillow_5() == 21
     c.put(1, 2, 5)
-    assert c.score_5() == 23
+    assert c.score_pillow_5() == 23
     c.put(1, 3, 5)
-    assert c.score_5() == 26
+    assert c.score_pillow_5() == 26
     c.put(1, 5, 5)
     assert c.score_5() == 31
     print(c)
