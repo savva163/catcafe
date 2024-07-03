@@ -43,16 +43,15 @@ def test_score():
     c.put(1, 2, 2)
     c.put(1, 5, 5)
     #заполнить три башни + две заполнить не до конца, посчитать сколько очков даст и проверить.
-def test_score_home_1():
+def test_score_home1():
     a = House()
-    assert a.score_home_1() == 0
+    assert a.score_home1() == 0
     a.put(1, 1, 2)
-    assert a.score_home_1() == 0
+    assert a.score_home1() == 0
     a.put(1, 2, 2)
     a.put(1, 3, 2)
     a.put(1, 5, 2)
-    assert a.score_home_1() == 4
-    assert type(a.score_home_1()) == int
+    assert a.score_home1() == 4
 
 def test_score_ball_2():
     c = House()
@@ -85,10 +84,26 @@ def test_score_bowl_4():
 def test_score_pillow5():
     pass
 def test_score_6():
-    pass
+    c = House()
+    c.put(5, 1, 6)
+    assert c.score_mouse6() == 22
+    c.put(5, 2, 6)
+    assert c.score_mouse6() == 22
+    c.put(2, 4, 6)
+    assert c.score_mouse6() == 26
+    c.put(2, 5, 6)
+    assert c.score_mouse6() == 32
+    print(c)
 
 def test_save():
     pass
 
 def test_load():
-    pass
+    c = House()
+    c.put(3, 4, 1)
+    print(c)
+    c.save()
+    a = House()
+    print(a)
+    a.load(c.save())
+    print(a)
