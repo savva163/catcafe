@@ -1,16 +1,14 @@
 import json
 from random import randint
-
 class Dice():
     SIDES = [1, 2, 3, 4, 5, 6]
-
-    def init(self, side=None):
-        if side and 1 <= side <= 6:
+    def __init__(self, side=None):
+        if side != None and 1 <= side <= 6:
             self.current_side = side
         else:
             self.roll()
 
-    def repr(self):
+    def __repr__(self):
         return str(self.current_side)
 
     def roll(self):
@@ -22,7 +20,6 @@ class Dice():
     @classmethod
     def load(cls, value: str):
         return cls(value)
-
 
 
 
