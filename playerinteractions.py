@@ -1,6 +1,8 @@
+from house import House
+
 class PlayerInteraction():
-    def __init__(self):
+    def choose_dice(self, dice_list: list = None):
         pass
 
-    def __repr__(self):
+    def choose_action(self, house: House = None, dices=[int, int]):
         pass
