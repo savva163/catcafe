@@ -7,7 +7,7 @@ class Gamestate():
         pass
     def roll_dice(self):
         pass
-
+        
     def save(self):
         pass
     def load():
